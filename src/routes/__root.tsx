@@ -12,6 +12,7 @@ import { useEffect, type ReactNode } from "react";
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { LanguageProvider } from "@/lib/i18n";
+import { Toaster } from "sonner";
 
 const PERSON_JSONLD = {
   "@context": "https://schema.org",
@@ -153,6 +154,7 @@ function RootComponent() {
     <QueryClientProvider client={queryClient}>
       <LanguageProvider>
         <Outlet />
+        <Toaster position="top-center" richColors />
       </LanguageProvider>
     </QueryClientProvider>
   );
