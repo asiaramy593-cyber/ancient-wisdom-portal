@@ -60,6 +60,13 @@ export function SiteLayout({ children }: { children: ReactNode }) {
                 <Languages className="h-4 w-4" />
                 {lang === "ar" ? "EN" : "ع"}
               </button>
+              <button
+                onClick={toggleTheme}
+                className="ms-1 inline-flex items-center rounded-md border border-border px-2.5 py-2 text-sm hover:border-gold hover:text-gold transition-colors"
+                aria-label="Toggle theme"
+              >
+                {theme === "dark" ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+              </button>
             </nav>
 
             <div className="flex items-center gap-2 lg:hidden">
@@ -70,6 +77,13 @@ export function SiteLayout({ children }: { children: ReactNode }) {
               >
                 <Languages className="h-4 w-4" />
                 {lang === "ar" ? "EN" : "ع"}
+              </button>
+              <button
+                onClick={toggleTheme}
+                className="inline-flex items-center rounded-md border border-border p-2"
+                aria-label="Toggle theme"
+              >
+                {theme === "dark" ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
               </button>
               <button
                 onClick={() => setOpen((v) => !v)}
