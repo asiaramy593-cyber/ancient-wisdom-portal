@@ -1,7 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout, PageHeader } from "@/components/SiteLayout";
 import { useTr } from "@/lib/i18n";
-import { Mail, MapPin, Globe } from "lucide-react";
+import { Mail, MapPin, Globe, Phone } from "lucide-react";
+import { EMAIL, MAILTO_URL, PHONE_DISPLAY, WHATSAPP_URL } from "@/lib/contact-info";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -30,18 +31,27 @@ function ContactPage() {
         )}
       />
       <section className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid gap-6 md:grid-cols-3">
-          {[
-            { icon: Mail, l: tr("Email", "البريد الإلكتروني"), v: "contact@alsolahi.research" },
-            { icon: MapPin, l: tr("Based in", "المقر"), v: tr("Cairo, Egypt", "القاهرة، مصر") },
-            { icon: Globe, l: tr("Languages", "اللغات"), v: tr("Arabic · English", "العربية · الإنجليزية") },
-          ].map(({ icon: Icon, l, v }, i) => (
-            <div key={i} className="rounded-lg border border-border bg-card p-6 text-center">
-              <Icon className="h-6 w-6 text-gold mx-auto" />
-              <div className="mt-3 text-xs uppercase tracking-widest text-muted-foreground">{l}</div>
-              <div className="mt-1 font-serif text-lg text-primary">{v}</div>
-            </div>
-          ))}
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+          <a href={MAILTO_URL} className="rounded-lg border border-border bg-card p-6 text-center hover:border-gold transition-colors">
+            <Mail className="h-6 w-6 text-gold mx-auto" />
+            <div className="mt-3 text-xs uppercase tracking-widest text-muted-foreground">{tr("Email", "البريد الإلكتروني")}</div>
+            <div className="mt-1 font-serif text-base text-primary break-all">{EMAIL}</div>
+          </a>
+          <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="rounded-lg border border-border bg-card p-6 text-center hover:border-gold transition-colors">
+            <Phone className="h-6 w-6 text-gold mx-auto" />
+            <div className="mt-3 text-xs uppercase tracking-widest text-muted-foreground">{tr("WhatsApp", "واتساب")}</div>
+            <div className="mt-1 font-serif text-base text-primary" dir="ltr">{PHONE_DISPLAY}</div>
+          </a>
+          <div className="rounded-lg border border-border bg-card p-6 text-center">
+            <MapPin className="h-6 w-6 text-gold mx-auto" />
+            <div className="mt-3 text-xs uppercase tracking-widest text-muted-foreground">{tr("Based in", "المقر")}</div>
+            <div className="mt-1 font-serif text-base text-primary">{tr("Cairo, Egypt", "القاهرة، مصر")}</div>
+          </div>
+          <div className="rounded-lg border border-border bg-card p-6 text-center">
+            <Globe className="h-6 w-6 text-gold mx-auto" />
+            <div className="mt-3 text-xs uppercase tracking-widest text-muted-foreground">{tr("Languages", "اللغات")}</div>
+            <div className="mt-1 font-serif text-base text-primary">{tr("Arabic · English", "العربية · الإنجليزية")}</div>
+          </div>
         </div>
 
         <div className="mt-12 rounded-lg border border-border bg-papyrus p-8 text-center">

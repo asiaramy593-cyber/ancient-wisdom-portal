@@ -12,6 +12,7 @@ import { useEffect, type ReactNode } from "react";
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { LanguageProvider } from "@/lib/i18n";
+import { ThemeProvider } from "@/lib/theme";
 import { Toaster } from "sonner";
 
 const PERSON_JSONLD = {
@@ -152,10 +153,12 @@ function RootComponent() {
   const { queryClient } = Route.useRouteContext();
   return (
     <QueryClientProvider client={queryClient}>
-      <LanguageProvider>
-        <Outlet />
-        <Toaster position="top-center" richColors />
-      </LanguageProvider>
+      <ThemeProvider>
+        <LanguageProvider>
+          <Outlet />
+          <Toaster position="top-center" richColors />
+        </LanguageProvider>
+      </ThemeProvider>
     </QueryClientProvider>
   );
 }

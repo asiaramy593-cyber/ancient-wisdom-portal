@@ -1,7 +1,9 @@
 import { Link } from "@tanstack/react-router";
 import { useState, type ReactNode } from "react";
-import { Menu, X, Languages } from "lucide-react";
+import { Menu, X, Languages, Sun, Moon, MessageCircle } from "lucide-react";
 import { NAME_AR, NAME_EN, useLang, useTr } from "@/lib/i18n";
+import { useTheme } from "@/lib/theme";
+import { WHATSAPP_URL } from "@/lib/contact-info";
 
 const NAV = [
   { to: "/", key: "nav_home" },
@@ -17,6 +19,7 @@ const NAV = [
 
 export function SiteLayout({ children }: { children: ReactNode }) {
   const { lang, setLang, t } = useLang();
+  const { theme, toggle: toggleTheme } = useTheme();
   const tr = useTr();
   const [open, setOpen] = useState(false);
   const name = tr(NAME_EN, NAME_AR);
@@ -57,6 +60,13 @@ export function SiteLayout({ children }: { children: ReactNode }) {
                 <Languages className="h-4 w-4" />
                 {lang === "ar" ? "EN" : "ع"}
               </button>
+              <button
+                onClick={toggleTheme}
+                className="ms-1 inline-flex items-center rounded-md border border-border px-2.5 py-2 text-sm hover:border-gold hover:text-gold transition-colors"
+                aria-label="Toggle theme"
+              >
+                {theme === "dark" ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+              </button>
             </nav>
 
             <div className="flex items-center gap-2 lg:hidden">
@@ -67,6 +77,13 @@ export function SiteLayout({ children }: { children: ReactNode }) {
               >
                 <Languages className="h-4 w-4" />
                 {lang === "ar" ? "EN" : "ع"}
+              </button>
+              <button
+                onClick={toggleTheme}
+                className="inline-flex items-center rounded-md border border-border p-2"
+                aria-label="Toggle theme"
+              >
+                {theme === "dark" ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
               </button>
               <button
                 onClick={() => setOpen((v) => !v)}
@@ -104,6 +121,17 @@ export function SiteLayout({ children }: { children: ReactNode }) {
       </header>
 
       <main className="flex-1">{children}</main>
+
+      {/* Floating WhatsApp button */}
+      <a
+        href={WHATSAPP_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Chat on WhatsApp"
+        className="fixed bottom-5 end-5 z-50 inline-flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg shadow-black/20 hover:scale-105 transition-transform"
+      >
+        <MessageCircle className="h-7 w-7" />
+      </a>
 
       <footer className="border-t border-border bg-papyrus mt-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
