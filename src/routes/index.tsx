@@ -120,6 +120,57 @@ function HomePage() {
         </div>
       </section>
 
+      {/* Research & Publications Highlights */}
+      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 border-t border-border">
+        <div className="text-center mb-12">
+          <div className="text-xs uppercase tracking-[0.25em] text-gold">
+            {tr("Highlights", "أبرز الأعمال")}
+          </div>
+          <h2 className="font-serif text-3xl md:text-4xl text-primary mt-3">
+            {tr("Research & Publications Highlights", "أبرز الأبحاث والمنشورات")}
+          </h2>
+          <p className="mt-4 max-w-2xl mx-auto text-muted-foreground">
+            {tr(
+              "Selected peer-reviewed studies and field contributions in Egyptology, hieroglyphic philology, and material culture of Ancient Egypt.",
+              "مختارات من الدراسات المحكّمة والمساهمات الميدانية في علم المصريات، وفقه اللغة الهيروغليفية، والثقافة المادية لمصر القديمة."
+            )}
+          </p>
+        </div>
+        <div className="grid gap-6 md:grid-cols-3">
+          {[
+            {
+              en: { t: "Hieroglyphic Inscriptions of the Middle Kingdom", d: "A philological study of stelae from Abydos, examining royal epithets and offering formulae across the 12th Dynasty." },
+              ar: { t: "نقوش هيروغليفية من الدولة الوسطى", d: "دراسة لغوية لشواهد قبور أبيدوس، مع تحليل الألقاب الملكية وصيغ القرابين في الأسرة الثانية عشرة." },
+              year: "2023",
+            },
+            {
+              en: { t: "Temple Architecture in the Late Period", d: "Stratigraphic and architectural analysis of sanctuary complexes in the Nile Delta, with notes on Persian-era restorations." },
+              ar: { t: "العمارة المعبدية في العصر المتأخر", d: "تحليل طبقي ومعماري لمجمعات الحرم في دلتا النيل، مع ملاحظات على الترميمات في العصر الفارسي." },
+              year: "2022",
+            },
+            {
+              en: { t: "Funerary Practices in the New Kingdom", d: "Comparative study of Theban necropolis tomb assemblages, focusing on Book of the Dead vignettes and grave goods." },
+              ar: { t: "الطقوس الجنائزية في الدولة الحديثة", d: "دراسة مقارنة لمحتويات مقابر جبانة طيبة، مع تركيز على مشاهد كتاب الموتى والقرابين الجنائزية." },
+              year: "2021",
+            },
+          ].map((p, i) => {
+            const c = lang === "ar" ? p.ar : p.en;
+            return (
+              <article key={i} className="rounded-lg border border-border bg-card p-6 hover:border-gold/60 transition-colors">
+                <div className="text-xs uppercase tracking-widest text-gold">{p.year}</div>
+                <h3 className="mt-3 font-serif text-xl text-primary leading-snug">{c.t}</h3>
+                <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{c.d}</p>
+              </article>
+            );
+          })}
+        </div>
+        <div className="mt-10 text-center">
+          <Link to="/research" className="inline-flex items-center rounded-md border border-gold px-6 py-3 text-sm font-medium text-gold hover:bg-gold hover:text-gold-foreground transition-colors">
+            {tr("View Full Research Catalogue", "عرض كامل قائمة الأبحاث")}
+          </Link>
+        </div>
+      </section>
+
       {/* Quote / authority */}
       <section className="bg-papyrus border-y border-border">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-20 text-center">
