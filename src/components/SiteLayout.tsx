@@ -122,6 +122,17 @@ export function SiteLayout({ children }: { children: ReactNode }) {
 
       <main className="flex-1">{children}</main>
 
+      {/* Floating WhatsApp button */}
+      <a
+        href={WHATSAPP_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Chat on WhatsApp"
+        className="fixed bottom-5 end-5 z-50 inline-flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg shadow-black/20 hover:scale-105 transition-transform"
+      >
+        <MessageCircle className="h-7 w-7" />
+      </a>
+
       <footer className="border-t border-border bg-papyrus mt-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
           <div className="grid gap-8 md:grid-cols-3">
