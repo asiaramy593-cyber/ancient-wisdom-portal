@@ -19,6 +19,7 @@ const NAV = [
 
 export function SiteLayout({ children }: { children: ReactNode }) {
   const { lang, setLang, t } = useLang();
+  const { theme, toggle: toggleTheme } = useTheme();
   const tr = useTr();
   const [open, setOpen] = useState(false);
   const name = tr(NAME_EN, NAME_AR);
