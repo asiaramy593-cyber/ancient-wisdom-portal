@@ -1,7 +1,9 @@
 import { Link } from "@tanstack/react-router";
 import { useState, type ReactNode } from "react";
-import { Menu, X, Languages } from "lucide-react";
+import { Menu, X, Languages, Sun, Moon, MessageCircle } from "lucide-react";
 import { NAME_AR, NAME_EN, useLang, useTr } from "@/lib/i18n";
+import { useTheme } from "@/lib/theme";
+import { WHATSAPP_URL } from "@/lib/contact-info";
 
 const NAV = [
   { to: "/", key: "nav_home" },
