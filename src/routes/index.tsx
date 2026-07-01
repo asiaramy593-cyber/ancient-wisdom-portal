@@ -7,15 +7,17 @@ import { BookOpen, ScrollText, Landmark, GraduationCap } from "lucide-react";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Dr. Tamer Al-Solahi | د. تامر الصوالحي — Egyptology Researcher" },
+      { title: "Dr. Tamer Al-Solahi | Egyptologist & Historical Consultant" },
       {
         name: "description",
         content:
-          "Dr. Tamer Al-Solahi — researcher in Ancient Egyptian Archaeology and historical consultant. Research, publications, lectures, and consulting in Egyptology.",
+          "Official site of Dr. Tamer Al-Solahi (د. تامر الصوالحي) — Egyptologist and historical consultant. Research, publications, lectures, and consulting in Ancient Egyptian archaeology.",
       },
-      { property: "og:title", content: "Dr. Tamer Al-Solahi — Egyptology Researcher" },
-      { property: "og:description", content: "Researcher in Ancient Egyptian Archaeology and Historical Consultant." },
+      { name: "keywords", content: "Dr. Tamer Al-Solahi, Tamer Al-Solahi, د. تامر الصوالحي, Egyptology, Ancient Egyptian Archaeology, Egyptologist, historical consultant, Pharaonic history, علم المصريات, الآثار المصرية القديمة, باحث آثار مصرية, مستشار تاريخي" },
+      { property: "og:title", content: "Dr. Tamer Al-Solahi — Egyptologist & Historical Consultant" },
+      { property: "og:description", content: "Egyptologist and historical consultant. Research, publications, and consulting in Ancient Egyptian archaeology." },
       { property: "og:url", content: "/" },
+      { property: "og:type", content: "profile" },
     ],
     links: [{ rel: "canonical", href: "/" }],
   }),

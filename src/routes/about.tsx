@@ -6,11 +6,13 @@ import about from "@/assets/about-scholar.jpg";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Dr. Tamer Al-Solahi | Biography & Academic Profile" },
-      { name: "description", content: "Biography and academic profile of Dr. Tamer Al-Solahi — researcher in Ancient Egyptian Archaeology, historical consultant, and lecturer." },
-      { property: "og:title", content: "About — Dr. Tamer Al-Solahi" },
-      { property: "og:description", content: "Academic biography of Dr. Tamer Al-Solahi, Egyptology researcher and historical consultant." },
+      { title: "About Dr. Tamer Al-Solahi | Egyptologist Biography" },
+      { name: "description", content: "Biography of Dr. Tamer Al-Solahi (د. تامر الصوالحي): Egyptologist, historical consultant, and lecturer in Ancient Egyptian archaeology and hieroglyphic studies." },
+      { name: "keywords", content: "About Dr. Tamer Al-Solahi, biography, Egyptologist biography, نبذة عن د. تامر الصوالحي, سيرة ذاتية, باحث آثار مصرية, علم المصريات, hieroglyphic studies, historical consultant" },
+      { property: "og:title", content: "About Dr. Tamer Al-Solahi — Egyptologist Biography" },
+      { property: "og:description", content: "Academic biography of Dr. Tamer Al-Solahi, Egyptologist and historical consultant." },
       { property: "og:url", content: "/about" },
+      { property: "og:type", content: "profile" },
     ],
     links: [{ rel: "canonical", href: "/about" }],
   }),

@@ -5,11 +5,13 @@ import { useTr } from "@/lib/i18n";
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "Services — Dr. Tamer Al-Solahi | Egyptology Consulting" },
-      { name: "description", content: "Historical consulting, museum advisory, documentary scholarship, and academic lectures by Dr. Tamer Al-Solahi." },
-      { property: "og:title", content: "Services — Dr. Tamer Al-Solahi" },
-      { property: "og:description", content: "Consulting, advisory and lecture services in Egyptology." },
+      { title: "Services | Egyptology Consulting — Dr. Al-Solahi" },
+      { name: "description", content: "Egyptology services by Dr. Tamer Al-Solahi: historical consulting, museum advisory, documentary scholarship, and academic lectures in Arabic and English." },
+      { name: "keywords", content: "Egyptology consulting services, museum advisory, documentary consultant, academic lectures, خدمات استشارية تاريخية, استشارات متحفية, محاضرات أكاديمية, علم المصريات, historical consultant Egypt" },
+      { property: "og:title", content: "Services — Egyptology Consulting | Dr. Al-Solahi" },
+      { property: "og:description", content: "Consulting, museum advisory, and lecture services in Egyptology." },
       { property: "og:url", content: "/services" },
+      { property: "og:type", content: "website" },
     ],
     links: [{ rel: "canonical", href: "/services" }],
   }),

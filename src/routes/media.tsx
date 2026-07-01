@@ -6,11 +6,13 @@ import { Mic, Video, Newspaper, Radio } from "lucide-react";
 export const Route = createFileRoute("/media")({
   head: () => ({
     meta: [
-      { title: "Media — Lectures, Interviews & Documentaries | Dr. Tamer Al-Solahi" },
-      { name: "description", content: "Lectures, interviews, podcasts, and documentary appearances by Dr. Tamer Al-Solahi, Egyptology researcher." },
-      { property: "og:title", content: "Media — Dr. Tamer Al-Solahi" },
-      { property: "og:description", content: "Selected media appearances and lectures." },
+      { title: "Media, Lectures & Documentaries | Dr. Al-Solahi" },
+      { name: "description", content: "Selected lectures, interviews, podcasts, and documentary appearances by Dr. Tamer Al-Solahi (د. تامر الصوالحي), Egyptologist and historical consultant." },
+      { name: "keywords", content: "Dr. Tamer Al-Solahi lectures, Egyptology interviews, documentary consultant, محاضرات د. تامر الصوالحي, مقابلات علم المصريات, مستشار وثائقيات, Ancient Egypt documentary" },
+      { property: "og:title", content: "Media, Lectures & Documentaries — Dr. Al-Solahi" },
+      { property: "og:description", content: "Selected media appearances, lectures, and documentary work in Egyptology." },
       { property: "og:url", content: "/media" },
+      { property: "og:type", content: "website" },
     ],
     links: [{ rel: "canonical", href: "/media" }],
   }),

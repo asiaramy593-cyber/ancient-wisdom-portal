@@ -33,11 +33,13 @@ const faqs = [
 export const Route = createFileRoute("/faq")({
   head: () => ({
     meta: [
-      { title: "FAQ — Dr. Tamer Al-Solahi | Egyptology Consulting Questions" },
-      { name: "description", content: "Frequently asked questions about the research, consulting services, and lectures of Dr. Tamer Al-Solahi." },
-      { property: "og:title", content: "FAQ — Dr. Tamer Al-Solahi" },
+      { title: "FAQ | Dr. Tamer Al-Solahi — Egyptology Consulting" },
+      { name: "description", content: "Answers to frequently asked questions about Dr. Tamer Al-Solahi's Egyptology research, historical consulting, museum advisory, and academic lectures." },
+      { name: "keywords", content: "Dr. Tamer Al-Solahi FAQ, Egyptology FAQ, الأسئلة الشائعة, أسئلة عن علم المصريات, استشارات تاريخية, لغات المحاضرة, consulting questions, lecture booking" },
+      { property: "og:title", content: "FAQ — Dr. Tamer Al-Solahi | Egyptology Consulting" },
       { property: "og:description", content: "Answers to common questions about consulting, lectures, and research." },
       { property: "og:url", content: "/faq" },
+      { property: "og:type", content: "website" },
     ],
     links: [{ rel: "canonical", href: "/faq" }],
     scripts: [
