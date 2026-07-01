@@ -7,11 +7,13 @@ import { toast } from "sonner";
 export const Route = createFileRoute("/request")({
   head: () => ({
     meta: [
-      { title: "Request a Consultation — Dr. Tamer Al-Solahi" },
-      { name: "description", content: "Submit a research, consulting, or lecture request to Dr. Tamer Al-Solahi, researcher in Ancient Egyptian Archaeology." },
-      { property: "og:title", content: "Request — Dr. Tamer Al-Solahi" },
+      { title: "Request a Consultation | Dr. Tamer Al-Solahi" },
+      { name: "description", content: "Request an Egyptology consultation, historical advisory, or lecture from Dr. Tamer Al-Solahi (د. تامر الصوالحي). Share your project scope and timeline." },
+      { name: "keywords", content: "request Egyptology consultation, hire Egyptologist, historical consultant request, طلب استشارة تاريخية, حجز محاضرة, استشارة علم المصريات, museum advisory request" },
+      { property: "og:title", content: "Request a Consultation — Dr. Tamer Al-Solahi" },
       { property: "og:description", content: "Submit a consulting, research, or lecture request." },
       { property: "og:url", content: "/request" },
+      { property: "og:type", content: "website" },
     ],
     links: [{ rel: "canonical", href: "/request" }],
   }),

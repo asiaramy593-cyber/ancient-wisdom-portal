@@ -5,11 +5,13 @@ import { useTr } from "@/lib/i18n";
 export const Route = createFileRoute("/research")({
   head: () => ({
     meta: [
-      { title: "Research Articles — Dr. Tamer Al-Solahi | Egyptology Publications" },
-      { name: "description", content: "Scholarly research articles by Dr. Tamer Al-Solahi on Ancient Egyptian archaeology, hieroglyphic studies, and Pharaonic history." },
-      { property: "og:title", content: "Research Articles — Dr. Tamer Al-Solahi" },
-      { property: "og:description", content: "Peer-oriented Egyptological research and articles." },
+      { title: "Research & Publications | Dr. Tamer Al-Solahi" },
+      { name: "description", content: "Scholarly publications by Dr. Tamer Al-Solahi on Ancient Egyptian archaeology, hieroglyphic studies, temple architecture, and Pharaonic history." },
+      { name: "keywords", content: "Dr. Tamer Al-Solahi publications, Egyptology research, hieroglyphic studies, temple architecture, أبحاث د. تامر الصوالحي, دراسات هيروغليفية, عمارة المعابد, تاريخ فرعوني, Ancient Egyptian archaeology" },
+      { property: "og:title", content: "Research & Publications — Dr. Tamer Al-Solahi" },
+      { property: "og:description", content: "Peer-oriented Egyptological research, articles, and publications." },
       { property: "og:url", content: "/research" },
+      { property: "og:type", content: "website" },
     ],
     links: [{ rel: "canonical", href: "/research" }],
   }),
