@@ -22,22 +22,38 @@ const PERSON_JSONLD = {
   alternateName: "د. تامر الصوالحي",
   jobTitle: "Researcher in Ancient Egyptian Archaeology & Historical Consultant",
   description:
-    "Researcher in Ancient Egyptian Archaeology and Historical Consultant specializing in Egyptology, hieroglyphic studies, and museum advisory.",
+    "Dr. Tamer Al-Solahi is a researcher in Ancient Egyptian Archaeology and historical consultant specializing in Egyptology, hieroglyphic studies, and cultural heritage of Ancient Egypt.",
   knowsAbout: [
     "Egyptology",
     "Ancient Egyptian Archaeology",
     "Hieroglyphs",
     "Pharaonic History",
-    "Museum Studies",
+    "Cultural Heritage",
+    "Historical Documentation",
     "علم المصريات",
     "الآثار المصرية القديمة",
     "الهيروغليفية",
   ],
   knowsLanguage: ["ar", "en"],
   nationality: "Egyptian",
+  birthPlace: {
+    "@type": "Place",
+    name: "Garden City, Cairo, Egypt",
+  },
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Historical Research Center, Fifth Settlement",
+    addressLocality: "New Cairo",
+    addressRegion: "Cairo",
+    addressCountry: "EG",
+  },
+  telephone: "+201150778062",
   url: "/",
-  sameAs: [] as string[],
+  sameAs: [
+    "https://web.facebook.com/profile.php?id=61576404092074",
+  ],
 };
+
 
 const WEBSITE_JSONLD = {
   "@context": "https://schema.org",

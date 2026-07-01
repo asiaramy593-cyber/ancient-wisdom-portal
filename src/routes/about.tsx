@@ -36,18 +36,23 @@ function AboutPage() {
         </div>
         <div className="md:col-span-3 academic-prose space-y-5 text-foreground/90">
           <p>{tr(
-            "Dr. Tamer Al-Solahi is a researcher in Ancient Egyptian Archaeology and historical consultant whose work bridges field practice and textual scholarship. His research focuses on the religious architecture of the New Kingdom, funerary epigraphy, and the cultural continuity of the Nile Valley from the Predynastic period through the Greco-Roman era.",
-            "د. تامر الصوالحي باحث في علم الآثار المصرية القديمة ومستشار تاريخي، يجمع عمله بين الممارسة الميدانية والبحث النصي. تتركز أبحاثه على العمارة الدينية في الدولة الحديثة، والكتابات الجنائزية، واستمرارية حضارة وادي النيل من عصر ما قبل الأسرات وحتى العصر اليوناني الروماني."
+            "Dr. Tamer Al-Solahi is a specialized researcher in Ancient Egyptian Archaeology and a historical consultant, dedicating his work to the study of Ancient Egyptian civilization through documented archaeological evidence and verified scholarly references.",
+            "يُعد الدكتور تامر الصوالحي باحثاً متخصصاً في الآثار المصرية القديمة ومستشاراً تاريخياً، ويكرس جهوده لدراسة الحضارة المصرية القديمة اعتماداً على الأدلة الأثرية والمراجع العلمية الموثقة."
           )}</p>
           <p>{tr(
-            "He has consulted on museum exhibitions, documentary productions, and scholarly publications, providing rigorous historical context grounded in primary sources and recent fieldwork.",
-            "قدّم استشارات لمعارض متحفية وإنتاجات وثائقية ومنشورات علمية، مقدّماً سياقاً تاريخياً دقيقاً يستند إلى المصادر الأولية والأعمال الميدانية الحديثة."
+            "He focuses on disseminating accurate historical knowledge and presenting scholarly content in a professional style that combines academic precision with clarity and accessibility.",
+            "يركز على نشر المعرفة التاريخية الصحيحة وتقديم المحتوى العلمي بأسلوب احترافي يجمع بين الدقة الأكاديمية وسهولة الفهم."
           )}</p>
           <p>{tr(
-            "Beyond academic research, Dr. Al-Solahi is committed to public scholarship — making Egyptology accessible through lectures, articles, and educational programs in both Arabic and English.",
-            "إلى جانب البحث الأكاديمي، يلتزم د. الصوالحي بنشر المعرفة العامة — لجعل علم المصريات في متناول الجمهور عبر المحاضرات والمقالات والبرامج التعليمية باللغتين العربية والإنجليزية."
+            "His work spans historical studies, archaeological research and analysis, and providing historical consultancy for cultural and media projects.",
+            "يهتم بإعداد الدراسات التاريخية، والأبحاث، والتحليلات الأثرية، بالإضافة إلى تقديم الاستشارات التاريخية للمشروعات الثقافية والإعلامية."
+          )}</p>
+          <p>{tr(
+            "He seeks to raise awareness of Ancient Egyptian civilization and to safeguard Egypt's cultural heritage for future generations.",
+            "يسعى إلى نشر الوعي بالحضارة المصرية القديمة والمحافظة على التراث الثقافي المصري."
           )}</p>
         </div>
+
       </section>
 
       <section className="bg-papyrus border-y border-border">
