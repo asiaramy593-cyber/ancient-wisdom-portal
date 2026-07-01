@@ -7,13 +7,11 @@ import { EMAIL, MAILTO_URL, PHONE_DISPLAY, WHATSAPP_URL } from "@/lib/contact-in
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Dr. Tamer Al-Solahi | Egyptology Consulting" },
-      { name: "description", content: "Contact Dr. Tamer Al-Solahi (د. تامر الصوالحي) for Egyptology research collaborations, historical consulting, museum advisory, lectures, and media inquiries." },
-      { name: "keywords", content: "Contact Dr. Tamer Al-Solahi, تواصل د. تامر الصوالحي, Egyptology consulting contact, historical consultant Egypt, استشارات تاريخية, حجز محاضرة, media inquiry Egyptology" },
-      { property: "og:title", content: "Contact Dr. Tamer Al-Solahi — Egyptology Consulting" },
-      { property: "og:description", content: "Get in touch for Egyptology research, historical consulting, and lectures." },
+      { title: "Contact Dr. Tamer Al-Solahi — Egyptology Consulting & Inquiries" },
+      { name: "description", content: "Contact Dr. Tamer Al-Solahi for research collaborations, consulting engagements, lectures, and media inquiries." },
+      { property: "og:title", content: "Contact — Dr. Tamer Al-Solahi" },
+      { property: "og:description", content: "Get in touch for Egyptology research, consulting, and lectures." },
       { property: "og:url", content: "/contact" },
-      { property: "og:type", content: "website" },
     ],
     links: [{ rel: "canonical", href: "/contact" }],
   }),

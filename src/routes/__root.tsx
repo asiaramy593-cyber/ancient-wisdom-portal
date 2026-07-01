@@ -99,29 +99,23 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Dr. Tamer Al-Solahi | Egyptologist & Historical Consultant" },
+      { title: "Dr. Tamer Al-Solahi — Egyptology Researcher & Historical Consultant" },
       {
         name: "description",
         content:
-          "Dr. Tamer Al-Solahi (د. تامر الصوالحي) — researcher in Ancient Egyptian Archaeology and historical consultant. Publications, lectures, and Egyptology consulting.",
+          "Official site of Dr. Tamer Al-Solahi (د. تامر الصوالحي), researcher in Ancient Egyptian Archaeology and historical consultant. Research, publications, and consulting in Egyptology.",
       },
       { name: "author", content: "Dr. Tamer Al-Solahi" },
-      { name: "robots", content: "index, follow, max-image-preview:large, max-snippet:-1" },
-      { name: "googlebot", content: "index, follow" },
       {
         name: "keywords",
         content:
-          "Dr. Tamer Al-Solahi, Tamer Al-Solahi, د. تامر الصوالحي, تامر الصوالحي, Egyptology, Egyptologist, Ancient Egyptian Archaeology, Hieroglyphs, Pharaonic History, Egyptian history consultant, علم المصريات, الآثار المصرية القديمة, الهيروغليفية, التاريخ الفرعوني, مستشار تاريخي, باحث آثار",
+          "Tamer Al-Solahi, Dr. Tamer Al-Solahi, تامر الصوالحي, Egyptology, Ancient Egyptian Archaeology, Hieroglyphs, Pharaonic History, علم المصريات, الآثار المصرية, الهيروغليفية, تاريخ مصر القديمة, مستشار تاريخي",
       },
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "Dr. Tamer Al-Solahi" },
-      { property: "og:locale", content: "en_US" },
-      { property: "og:locale:alternate", content: "ar_EG" },
-      { property: "og:title", content: "Dr. Tamer Al-Solahi — Egyptologist & Historical Consultant" },
-      { property: "og:description", content: "Researcher in Ancient Egyptian Archaeology and historical consultant. Publications, lectures, and consulting." },
+      { property: "og:title", content: "Dr. Tamer Al-Solahi — Egyptology Researcher" },
+      { property: "og:description", content: "Researcher in Ancient Egyptian Archaeology and Historical Consultant." },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Dr. Tamer Al-Solahi — Egyptologist" },
-      { name: "twitter:description", content: "Researcher in Ancient Egyptian Archaeology and historical consultant." },
     ],
     links: [
       { rel: "stylesheet", href: appCss },

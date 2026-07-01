@@ -6,13 +6,11 @@ import { FileText, Download } from "lucide-react";
 export const Route = createFileRoute("/downloads")({
   head: () => ({
     meta: [
-      { title: "Downloads — CV & Egyptology Resources | Dr. Al-Solahi" },
-      { name: "description", content: "Download the academic CV, Egyptology reading lists, and research resources of Dr. Tamer Al-Solahi (د. تامر الصوالحي)." },
-      { name: "keywords", content: "Dr. Tamer Al-Solahi CV, academic CV Egyptology, Egyptology reading list, تنزيلات, السيرة الذاتية د. تامر الصوالحي, قائمة قراءة علم المصريات, research resources" },
-      { property: "og:title", content: "Downloads — CV & Egyptology Resources | Dr. Al-Solahi" },
+      { title: "Downloads — CV, Reading Lists & Resources | Dr. Tamer Al-Solahi" },
+      { name: "description", content: "Downloadable academic CV, Egyptology reading lists, and research resources by Dr. Tamer Al-Solahi." },
+      { property: "og:title", content: "Downloads — Dr. Tamer Al-Solahi" },
       { property: "og:description", content: "CV, reading lists, and Egyptology research resources." },
       { property: "og:url", content: "/downloads" },
-      { property: "og:type", content: "website" },
     ],
     links: [{ rel: "canonical", href: "/downloads" }],
   }),

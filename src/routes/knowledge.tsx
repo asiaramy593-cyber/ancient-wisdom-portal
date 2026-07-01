@@ -5,13 +5,11 @@ import { useTr } from "@/lib/i18n";
 export const Route = createFileRoute("/knowledge")({
   head: () => ({
     meta: [
-      { title: "Egyptology Knowledge Base | Dr. Tamer Al-Solahi" },
-      { name: "description", content: "Reference library on Ancient Egyptian civilization by Dr. Tamer Al-Solahi: dynasties, temples, deities, hieroglyphs, and the Book of the Dead." },
-      { name: "keywords", content: "Egyptology knowledge base, Ancient Egypt reference, dynasties, hieroglyphs, Book of the Dead, Valley of the Kings, قاعدة معرفة علم المصريات, الأسرات الفرعونية, الهيروغليفية, وادي الملوك, كتاب الموتى, معابد الكرنك" },
-      { property: "og:title", content: "Egyptology Knowledge Base — Dr. Tamer Al-Solahi" },
-      { property: "og:description", content: "Reference articles on Ancient Egyptian history, sites, language, and religion." },
+      { title: "Knowledge Base — Egyptology Reference | Dr. Tamer Al-Solahi" },
+      { name: "description", content: "Egyptology knowledge base by Dr. Tamer Al-Solahi: dynasties, sites, deities, hieroglyphic concepts, and reading lists." },
+      { property: "og:title", content: "Knowledge Base — Dr. Tamer Al-Solahi" },
+      { property: "og:description", content: "Reference articles in Ancient Egyptian history, sites, and language." },
       { property: "og:url", content: "/knowledge" },
-      { property: "og:type", content: "website" },
     ],
     links: [{ rel: "canonical", href: "/knowledge" }],
   }),
