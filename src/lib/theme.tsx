@@ -5,12 +5,11 @@ interface Ctx { theme: Theme; setTheme: (t: Theme) => void; toggle: () => void }
 const ThemeContext = createContext<Ctx | null>(null);
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
-  const [theme, setThemeState] = useState<Theme>("light");
+  const [theme, setThemeState] = useState<Theme>("dark");
 
   useEffect(() => {
     const saved = (typeof window !== "undefined" && (localStorage.getItem("theme") as Theme)) || null;
-    const prefersDark = typeof window !== "undefined" && window.matchMedia?.("(prefers-color-scheme: dark)").matches;
-    setThemeState(saved ?? (prefersDark ? "dark" : "light"));
+    setThemeState(saved ?? "dark");
   }, []);
 
   useEffect(() => {
