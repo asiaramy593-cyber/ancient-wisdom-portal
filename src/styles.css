@@ -5,9 +5,11 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --font-serif: "Cormorant Garamond", "Playfair Display", Georgia, serif;
-  --font-arabic: "Amiri", "Noto Naskh Arabic", "Times New Roman", serif;
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Space Grotesk", "DM Sans", ui-sans-serif, sans-serif;
+  --font-display: "Space Grotesk", "DM Sans", sans-serif;
+  --font-arabic: "Tajawal", "Cairo", "Noto Naskh Arabic", sans-serif;
+  --font-arabic-display: "Cairo", "Tajawal", sans-serif;
 
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -35,86 +37,116 @@
   --color-ring: var(--ring);
   --color-gold: var(--gold);
   --color-gold-foreground: var(--gold-foreground);
+  --color-gold-bright: var(--gold-bright);
   --color-papyrus: var(--papyrus);
 }
 
+/* Noir & Gold — light mode: crisp paper white with black ink and gold accent */
 :root {
-  --radius: 0.375rem;
+  --radius: 0.625rem;
 
-  /* Papyrus warm off-white */
-  --background: oklch(0.985 0.012 85);
-  --foreground: oklch(0.22 0.03 50);
-  --papyrus: oklch(0.96 0.025 80);
+  --background: oklch(0.985 0.003 60);
+  --foreground: oklch(0.145 0.005 60);
+  --papyrus: oklch(0.965 0.006 70);
 
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.22 0.03 50);
+  --card-foreground: oklch(0.145 0.005 60);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.22 0.03 50);
+  --popover-foreground: oklch(0.145 0.005 60);
 
-  /* Deep ink navy */
-  --primary: oklch(0.28 0.04 250);
-  --primary-foreground: oklch(0.985 0.012 85);
+  /* Ink black primary */
+  --primary: oklch(0.145 0.005 60);
+  --primary-foreground: oklch(0.985 0.003 60);
 
-  --secondary: oklch(0.93 0.02 80);
-  --secondary-foreground: oklch(0.28 0.04 250);
-  --muted: oklch(0.94 0.015 80);
-  --muted-foreground: oklch(0.48 0.025 60);
-  --accent: oklch(0.93 0.04 75);
-  --accent-foreground: oklch(0.28 0.04 250);
+  --secondary: oklch(0.955 0.006 70);
+  --secondary-foreground: oklch(0.145 0.005 60);
+  --muted: oklch(0.955 0.006 70);
+  --muted-foreground: oklch(0.48 0.008 60);
+  --accent: oklch(0.955 0.02 85);
+  --accent-foreground: oklch(0.145 0.005 60);
 
-  /* Antique gold */
-  --gold: oklch(0.68 0.13 75);
-  --gold-foreground: oklch(0.22 0.03 50);
+  /* Noir & Gold accents */
+  --gold: oklch(0.74 0.13 82);         /* #c9a84c */
+  --gold-bright: oklch(0.86 0.13 88);  /* #f0d78c */
+  --gold-foreground: oklch(0.145 0.005 60);
 
   --destructive: oklch(0.55 0.22 25);
   --destructive-foreground: oklch(0.99 0 0);
-  --border: oklch(0.88 0.02 75);
-  --input: oklch(0.88 0.02 75);
-  --ring: oklch(0.68 0.13 75);
+  --border: oklch(0.9 0.005 60);
+  --input: oklch(0.9 0.005 60);
+  --ring: oklch(0.74 0.13 82);
 }
 
+/* Noir & Gold — dark mode: true noir with luminous gold */
 .dark {
-  --background: oklch(0.18 0.02 250);
-  --foreground: oklch(0.94 0.015 80);
-  --papyrus: oklch(0.22 0.025 250);
-  --card: oklch(0.22 0.025 250);
-  --card-foreground: oklch(0.94 0.015 80);
-  --popover: oklch(0.22 0.025 250);
-  --popover-foreground: oklch(0.94 0.015 80);
-  --primary: oklch(0.92 0.02 80);
-  --primary-foreground: oklch(0.20 0.03 250);
-  --secondary: oklch(0.28 0.03 250);
-  --secondary-foreground: oklch(0.94 0.015 80);
-  --muted: oklch(0.26 0.025 250);
-  --muted-foreground: oklch(0.72 0.02 80);
-  --accent: oklch(0.30 0.04 75);
-  --accent-foreground: oklch(0.94 0.015 80);
-  --gold: oklch(0.78 0.14 75);
-  --gold-foreground: oklch(0.18 0.02 250);
+  --background: oklch(0.14 0.003 60);   /* #0d0d0d */
+  --foreground: oklch(0.96 0.005 80);
+  --papyrus: oklch(0.185 0.004 60);     /* #1a1a1a */
+
+  --card: oklch(0.185 0.004 60);
+  --card-foreground: oklch(0.96 0.005 80);
+  --popover: oklch(0.185 0.004 60);
+  --popover-foreground: oklch(0.96 0.005 80);
+
+  --primary: oklch(0.86 0.13 88);       /* bright gold as primary in dark */
+  --primary-foreground: oklch(0.14 0.003 60);
+
+  --secondary: oklch(0.22 0.005 60);
+  --secondary-foreground: oklch(0.96 0.005 80);
+  --muted: oklch(0.22 0.005 60);
+  --muted-foreground: oklch(0.72 0.01 80);
+  --accent: oklch(0.26 0.02 85);
+  --accent-foreground: oklch(0.96 0.005 80);
+
+  --gold: oklch(0.82 0.14 85);
+  --gold-bright: oklch(0.9 0.13 90);
+  --gold-foreground: oklch(0.14 0.003 60);
+
   --destructive: oklch(0.62 0.22 25);
   --destructive-foreground: oklch(0.99 0 0);
-  --border: oklch(0.32 0.02 250);
-  --input: oklch(0.32 0.02 250);
-  --ring: oklch(0.78 0.14 75);
+  --border: oklch(0.26 0.004 60);
+  --input: oklch(0.26 0.004 60);
+  --ring: oklch(0.86 0.13 88);
 }
 
 @layer base {
   * { border-color: var(--color-border); }
   html { scroll-behavior: smooth; transition: background-color 0.3s ease, color 0.3s ease; }
-  body { transition: background-color 0.3s ease, color 0.3s ease; }
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
     font-family: var(--font-sans);
     font-feature-settings: "ss01", "cv11";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
   [dir="rtl"] body { font-family: var(--font-arabic); }
-  h1, h2, h3, h4 { font-family: var(--font-serif); letter-spacing: -0.01em; }
-  [dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3, [dir="rtl"] h4 { font-family: var(--font-arabic); letter-spacing: 0; }
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+    font-weight: 600;
+  }
+  [dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3, [dir="rtl"] h4 {
+    font-family: var(--font-arabic-display);
+    letter-spacing: -0.01em;
+    font-weight: 700;
+  }
 
-  .academic-prose p { line-height: 1.8; }
+  .academic-prose p { line-height: 1.75; }
   .gold-rule {
     height: 1px;
     background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
+  }
+  .gold-text {
+    background: linear-gradient(135deg, var(--color-gold-bright), var(--color-gold));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .noise-grain {
+    background-image: radial-gradient(circle at 1px 1px, currentColor 1px, transparent 0);
+    background-size: 24px 24px;
+    opacity: 0.03;
   }
 }
