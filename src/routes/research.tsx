@@ -5,9 +5,9 @@ import { useTr } from "@/lib/i18n";
 export const Route = createFileRoute("/research")({
   head: () => ({
     meta: [
-      { title: "Research Articles — Dr. Tamer Al-Solahi | Egyptology Publications" },
-      { name: "description", content: "Scholarly research articles by Dr. Tamer Al-Solahi on Ancient Egyptian archaeology, hieroglyphic studies, and Pharaonic history." },
-      { property: "og:title", content: "Research Articles — Dr. Tamer Al-Solahi" },
+      { title: "Research Articles — Dr. Ahmed Al-Muaiqly | Egyptology Publications" },
+      { name: "description", content: "Scholarly research articles by Dr. Ahmed Al-Muaiqly on Ancient Egyptian archaeology, hieroglyphic studies, and Pharaonic history." },
+      { property: "og:title", content: "Research Articles — Dr. Ahmed Al-Muaiqly" },
       { property: "og:description", content: "Peer-oriented Egyptological research and articles." },
       { property: "og:url", content: "/research" },
     ],

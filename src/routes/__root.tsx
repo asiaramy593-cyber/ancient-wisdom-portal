@@ -18,11 +18,11 @@ import { Toaster } from "sonner";
 const PERSON_JSONLD = {
   "@context": "https://schema.org",
   "@type": "Person",
-  name: "Dr. Tamer Al-Solahi",
-  alternateName: "د. تامر الصوالحي",
+  name: "Dr. Ahmed Al-Muaiqly",
+  alternateName: "د. أحمد المعيقلى",
   jobTitle: "Researcher in Ancient Egyptian Archaeology & Historical Consultant",
   description:
-    "Dr. Tamer Al-Solahi is a researcher in Ancient Egyptian Archaeology and historical consultant specializing in Egyptology, hieroglyphic studies, and cultural heritage of Ancient Egypt.",
+    "Dr. Ahmed Al-Muaiqly is a researcher in Ancient Egyptian Archaeology and historical consultant specializing in Egyptology, hieroglyphic studies, and cultural heritage of Ancient Egypt.",
   knowsAbout: [
     "Egyptology",
     "Ancient Egyptian Archaeology",
@@ -58,8 +58,8 @@ const PERSON_JSONLD = {
 const WEBSITE_JSONLD = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  name: "Dr. Tamer Al-Solahi — Egyptology Research",
-  alternateName: "د. تامر الصوالحي",
+  name: "Dr. Ahmed Al-Muaiqly — Egyptology Research",
+  alternateName: "د. أحمد المعيقلى",
   inLanguage: ["en", "ar"],
   url: "/",
 };
@@ -115,26 +115,26 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Dr. Tamer Al-Solahi — Egyptology Researcher & Historical Consultant" },
+      { title: "Dr. Ahmed Al-Muaiqly — Egyptology Researcher & Historical Consultant" },
       {
         name: "description",
         content:
-          "Official site of Dr. Tamer Al-Solahi (د. تامر الصوالحي), researcher in Ancient Egyptian Archaeology and historical consultant. Research, publications, and consulting in Egyptology.",
+          "Official site of Dr. Ahmed Al-Muaiqly (د. أحمد المعيقلى), researcher in Ancient Egyptian Archaeology and historical consultant. Research, publications, and consulting in Egyptology.",
       },
-      { name: "author", content: "Dr. Tamer Al-Solahi" },
+      { name: "author", content: "Dr. Ahmed Al-Muaiqly" },
       {
         name: "keywords",
         content:
-          "Tamer Al-Solahi, Dr. Tamer Al-Solahi, تامر الصوالحي, Egyptology, Ancient Egyptian Archaeology, Hieroglyphs, Pharaonic History, علم المصريات, الآثار المصرية, الهيروغليفية, تاريخ مصر القديمة, مستشار تاريخي",
+          "Ahmed Al-Muaiqly, Dr. Ahmed Al-Muaiqly, أحمد المعيقلى, Egyptology, Ancient Egyptian Archaeology, Hieroglyphs, Pharaonic History, علم المصريات, الآثار المصرية, الهيروغليفية, تاريخ مصر القديمة, مستشار تاريخي",
       },
       { property: "og:type", content: "website" },
-      { property: "og:site_name", content: "Dr. Tamer Al-Solahi" },
-      { property: "og:title", content: "Dr. Tamer Al-Solahi — Egyptology Researcher & Historical Consultant" },
-      { property: "og:description", content: "A professional, bilingual website showcasing Dr. Tamer Al-Solahi's expertise in Ancient Egyptian Archaeology." },
+      { property: "og:site_name", content: "Dr. Ahmed Al-Muaiqly" },
+      { property: "og:title", content: "Dr. Ahmed Al-Muaiqly — Egyptology Researcher & Historical Consultant" },
+      { property: "og:description", content: "A professional, bilingual website showcasing Dr. Ahmed Al-Muaiqly's expertise in Ancient Egyptian Archaeology." },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Dr. Tamer Al-Solahi — Egyptology Researcher & Historical Consultant" },
-      { name: "description", content: "A professional, bilingual website showcasing Dr. Tamer Al-Solahi's expertise in Ancient Egyptian Archaeology." },
-      { name: "twitter:description", content: "A professional, bilingual website showcasing Dr. Tamer Al-Solahi's expertise in Ancient Egyptian Archaeology." },
+      { name: "twitter:title", content: "Dr. Ahmed Al-Muaiqly — Egyptology Researcher & Historical Consultant" },
+      { name: "description", content: "A professional, bilingual website showcasing Dr. Ahmed Al-Muaiqly's expertise in Ancient Egyptian Archaeology." },
+      { name: "twitter:description", content: "A professional, bilingual website showcasing Dr. Ahmed Al-Muaiqly's expertise in Ancient Egyptian Archaeology." },
       { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/7c8cf796-011f-4d29-b3bf-cc5e9360f8a5/id-preview-b774e7b8--99832f1f-9051-48e8-acb6-ba110736b586.lovable.app-1782900015607.png" },
       { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/7c8cf796-011f-4d29-b3bf-cc5e9360f8a5/id-preview-b774e7b8--99832f1f-9051-48e8-acb6-ba110736b586.lovable.app-1782900015607.png" },
     ],

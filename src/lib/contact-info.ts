@@ -1,4 +1,4 @@
-// Official contact details for Dr. Tamer Al-Solahi
+// Official contact details for Dr. Ahmed Al-Muaiqly
 export const PHONE_INTL = "+201150778062"; // E.164 format
 export const PHONE_DISPLAY = "+20 115 077 8062";
 export const WHATSAPP_URL = `https://wa.me/${PHONE_INTL.replace(/[^0-9]/g, "")}`;
