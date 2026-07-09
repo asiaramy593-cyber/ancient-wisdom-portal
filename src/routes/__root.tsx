@@ -48,6 +48,7 @@ const PERSON_JSONLD = {
     addressCountry: "EG",
   },
   telephone: "+201150778062",
+  email: "ahmedalmuaiqly@gmail.com",
   url: "/",
   sameAs: [
     "https://web.facebook.com/profile.php?id=61576404092074",
