@@ -5,9 +5,9 @@ import { useTr } from "@/lib/i18n";
 export const Route = createFileRoute("/knowledge")({
   head: () => ({
     meta: [
-      { title: "Knowledge Base — Egyptology Reference | Dr. Tamer Al-Solahi" },
-      { name: "description", content: "Egyptology knowledge base by Dr. Tamer Al-Solahi: dynasties, sites, deities, hieroglyphic concepts, and reading lists." },
-      { property: "og:title", content: "Knowledge Base — Dr. Tamer Al-Solahi" },
+      { title: "Knowledge Base — Egyptology Reference | Dr. Ahmed Al-Muaiqly" },
+      { name: "description", content: "Egyptology knowledge base by Dr. Ahmed Al-Muaiqly: dynasties, sites, deities, hieroglyphic concepts, and reading lists." },
+      { property: "og:title", content: "Knowledge Base — Dr. Ahmed Al-Muaiqly" },
       { property: "og:description", content: "Reference articles in Ancient Egyptian history, sites, and language." },
       { property: "og:url", content: "/knowledge" },
     ],

@@ -17,8 +17,8 @@ const faqs = [
     ar: { q: "هل المحاضرات متاحة بالعربية والإنجليزية؟", a: "نعم. تُقدَّم المحاضرات والمقابلات والكتابات بأي من اللغتين بحسب الجمهور." },
   },
   {
-    en: { q: "Can I cite content from this site?", a: "Yes, with proper academic attribution to Dr. Tamer Al-Solahi and a link to the original article." },
-    ar: { q: "هل يمكنني الاستشهاد بمحتوى الموقع؟", a: "نعم، مع الإسناد الأكاديمي السليم إلى د. تامر الصوالحي ورابط للمقال الأصلي." },
+    en: { q: "Can I cite content from this site?", a: "Yes, with proper academic attribution to Dr. Ahmed Al-Muaiqly and a link to the original article." },
+    ar: { q: "هل يمكنني الاستشهاد بمحتوى الموقع؟", a: "نعم، مع الإسناد الأكاديمي السليم إلى د. أحمد المعيقلى ورابط للمقال الأصلي." },
   },
   {
     en: { q: "Do you supervise students or researchers?", a: "Limited supervision and mentorship is available for advanced students working in relevant fields." },
@@ -33,9 +33,9 @@ const faqs = [
 export const Route = createFileRoute("/faq")({
   head: () => ({
     meta: [
-      { title: "FAQ — Dr. Tamer Al-Solahi | Egyptology Consulting Questions" },
-      { name: "description", content: "Frequently asked questions about the research, consulting services, and lectures of Dr. Tamer Al-Solahi." },
-      { property: "og:title", content: "FAQ — Dr. Tamer Al-Solahi" },
+      { title: "FAQ — Dr. Ahmed Al-Muaiqly | Egyptology Consulting Questions" },
+      { name: "description", content: "Frequently asked questions about the research, consulting services, and lectures of Dr. Ahmed Al-Muaiqly." },
+      { property: "og:title", content: "FAQ — Dr. Ahmed Al-Muaiqly" },
       { property: "og:description", content: "Answers to common questions about consulting, lectures, and research." },
       { property: "og:url", content: "/faq" },
     ],

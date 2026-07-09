@@ -16,9 +16,9 @@ import {
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Dr. Tamer Al-Solahi — Egyptology Consulting & Inquiries" },
-      { name: "description", content: "Contact Dr. Tamer Al-Solahi for research collaborations, consulting engagements, lectures, and media inquiries. Based in New Cairo, Egypt." },
-      { property: "og:title", content: "Contact — Dr. Tamer Al-Solahi" },
+      { title: "Contact Dr. Ahmed Al-Muaiqly — Egyptology Consulting & Inquiries" },
+      { name: "description", content: "Contact Dr. Ahmed Al-Muaiqly for research collaborations, consulting engagements, lectures, and media inquiries. Based in New Cairo, Egypt." },
+      { property: "og:title", content: "Contact — Dr. Ahmed Al-Muaiqly" },
       { property: "og:description", content: "Get in touch for Egyptology research, consulting, and lectures." },
       { property: "og:url", content: "/contact" },
     ],

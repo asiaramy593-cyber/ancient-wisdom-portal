@@ -6,10 +6,10 @@ import about from "@/assets/about-scholar.jpg";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Dr. Tamer Al-Solahi | Biography & Academic Profile" },
-      { name: "description", content: "Biography and academic profile of Dr. Tamer Al-Solahi — researcher in Ancient Egyptian Archaeology, historical consultant, and lecturer." },
-      { property: "og:title", content: "About — Dr. Tamer Al-Solahi" },
-      { property: "og:description", content: "Academic biography of Dr. Tamer Al-Solahi, Egyptology researcher and historical consultant." },
+      { title: "About Dr. Ahmed Al-Muaiqly | Biography & Academic Profile" },
+      { name: "description", content: "Biography and academic profile of Dr. Ahmed Al-Muaiqly — researcher in Ancient Egyptian Archaeology, historical consultant, and lecturer." },
+      { property: "og:title", content: "About — Dr. Ahmed Al-Muaiqly" },
+      { property: "og:description", content: "Academic biography of Dr. Ahmed Al-Muaiqly, Egyptology researcher and historical consultant." },
       { property: "og:url", content: "/about" },
     ],
     links: [{ rel: "canonical", href: "/about" }],
@@ -23,7 +23,7 @@ function AboutPage() {
     <SiteLayout>
       <PageHeader
         eyebrow={tr("Biography", "السيرة الذاتية")}
-        title={tr("About Dr. Tamer Al-Solahi", "نبذة عن د. تامر الصوالحي")}
+        title={tr("About Dr. Ahmed Al-Muaiqly", "نبذة عن د. أحمد المعيقلى")}
         lead={tr(
           "A scholar dedicated to the study of Ancient Egyptian civilization, with research spanning hieroglyphic philology, temple architecture, and the material record of the Nile Valley.",
           "باحث مكرّس لدراسة الحضارة المصرية القديمة، تمتد أبحاثه عبر فقه اللغة الهيروغليفية، والعمارة المعبدية، والسجل المادي لوادي النيل."
@@ -36,8 +36,8 @@ function AboutPage() {
         </div>
         <div className="md:col-span-3 academic-prose space-y-5 text-foreground/90">
           <p>{tr(
-            "Dr. Tamer Al-Solahi is a specialized researcher in Ancient Egyptian Archaeology and a historical consultant, dedicating his work to the study of Ancient Egyptian civilization through documented archaeological evidence and verified scholarly references.",
-            "يُعد الدكتور تامر الصوالحي باحثاً متخصصاً في الآثار المصرية القديمة ومستشاراً تاريخياً، ويكرس جهوده لدراسة الحضارة المصرية القديمة اعتماداً على الأدلة الأثرية والمراجع العلمية الموثقة."
+            "Dr. Ahmed Al-Muaiqly is a specialized researcher in Ancient Egyptian Archaeology and a historical consultant, dedicating his work to the study of Ancient Egyptian civilization through documented archaeological evidence and verified scholarly references.",
+            "يُعد الدكتور أحمد المعيقلى باحثاً متخصصاً في الآثار المصرية القديمة ومستشاراً تاريخياً، ويكرس جهوده لدراسة الحضارة المصرية القديمة اعتماداً على الأدلة الأثرية والمراجع العلمية الموثقة."
           )}</p>
           <p>{tr(
             "He focuses on disseminating accurate historical knowledge and presenting scholarly content in a professional style that combines academic precision with clarity and accessibility.",
