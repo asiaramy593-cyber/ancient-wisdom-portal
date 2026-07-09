@@ -6,9 +6,9 @@ import { Mic, Video, Newspaper, Radio } from "lucide-react";
 export const Route = createFileRoute("/media")({
   head: () => ({
     meta: [
-      { title: "Media — Lectures, Interviews & Documentaries | Dr. Ahmed Al-Muaiqly" },
-      { name: "description", content: "Lectures, interviews, podcasts, and documentary appearances by Dr. Ahmed Al-Muaiqly, Egyptology researcher." },
-      { property: "og:title", content: "Media — Dr. Ahmed Al-Muaiqly" },
+      { title: "Media — Lectures, Interviews & Documentaries | Dr. Tamer Al-Solahi" },
+      { name: "description", content: "Lectures, interviews, podcasts, and documentary appearances by Dr. Tamer Al-Solahi, Egyptology researcher." },
+      { property: "og:title", content: "Media — Dr. Tamer Al-Solahi" },
       { property: "og:description", content: "Selected media appearances and lectures." },
       { property: "og:url", content: "/media" },
     ],

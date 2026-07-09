@@ -7,13 +7,13 @@ import { BookOpen, ScrollText, Landmark, GraduationCap } from "lucide-react";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Dr. Ahmed Al-Muaiqly | د. أحمد المعيقلى — Egyptology Researcher" },
+      { title: "Dr. Tamer Al-Solahi | د. تامر الصوالحي — Egyptology Researcher" },
       {
         name: "description",
         content:
-          "Dr. Ahmed Al-Muaiqly — researcher in Ancient Egyptian Archaeology and historical consultant. Research, publications, lectures, and consulting in Egyptology.",
+          "Dr. Tamer Al-Solahi — researcher in Ancient Egyptian Archaeology and historical consultant. Research, publications, lectures, and consulting in Egyptology.",
       },
-      { property: "og:title", content: "Dr. Ahmed Al-Muaiqly — Egyptology Researcher" },
+      { property: "og:title", content: "Dr. Tamer Al-Solahi — Egyptology Researcher" },
       { property: "og:description", content: "Researcher in Ancient Egyptian Archaeology and Historical Consultant." },
       { property: "og:url", content: "/" },
     ],
@@ -191,8 +191,8 @@ function HomePage() {
         </h2>
         <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
           {tr(
-            "From museum exhibits to scholarly publications and film consulting — engage Dr. Al-Muaiqly for rigorous Egyptological work.",
-            "من معارض المتاحف إلى المنشورات الأكاديمية واستشارات الأفلام — تواصل مع د. المعيقلى للحصول على عمل علمي رصين في علم المصريات."
+            "From museum exhibits to scholarly publications and film consulting — engage Dr. Al-Solahi for rigorous Egyptological work.",
+            "من معارض المتاحف إلى المنشورات الأكاديمية واستشارات الأفلام — تواصل مع د. الصوالحي للحصول على عمل علمي رصين في علم المصريات."
           )}
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-3">

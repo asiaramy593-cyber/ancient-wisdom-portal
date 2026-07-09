@@ -7,9 +7,9 @@ import { toast } from "sonner";
 export const Route = createFileRoute("/request")({
   head: () => ({
     meta: [
-      { title: "Request a Consultation — Dr. Ahmed Al-Muaiqly" },
-      { name: "description", content: "Submit a research, consulting, or lecture request to Dr. Ahmed Al-Muaiqly, researcher in Ancient Egyptian Archaeology." },
-      { property: "og:title", content: "Request — Dr. Ahmed Al-Muaiqly" },
+      { title: "Request a Consultation — Dr. Tamer Al-Solahi" },
+      { name: "description", content: "Submit a research, consulting, or lecture request to Dr. Tamer Al-Solahi, researcher in Ancient Egyptian Archaeology." },
+      { property: "og:title", content: "Request — Dr. Tamer Al-Solahi" },
       { property: "og:description", content: "Submit a consulting, research, or lecture request." },
       { property: "og:url", content: "/request" },
     ],

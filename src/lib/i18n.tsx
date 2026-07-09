@@ -11,14 +11,14 @@ interface Ctx {
 
 const LangContext = createContext<Ctx | null>(null);
 
-export const NAME_EN = "Dr. Ahmed Al-Muaiqly";
-export const NAME_AR = "د. أحمد المعيقلى";
+export const NAME_EN = "Dr. Tamer Al-Solahi";
+export const NAME_AR = "د. تامر الصوالحي";
 export const TITLE_EN = "Researcher in Ancient Egyptian Archaeology & Historical Consultant";
 export const TITLE_AR = "باحث في علم الآثار المصرية القديمة ومستشار تاريخي";
 
 export const dict = {
   en: {
-    brandShort: "Dr. Al-Muaiqly",
+    brandShort: "Dr. Al-Solahi",
     nav_home: "Home",
     nav_about: "About",
     nav_research: "Research",
@@ -35,7 +35,7 @@ export const dict = {
     footer_tagline: "Egyptology · Archaeological Research · Historical Consulting",
   },
   ar: {
-    brandShort: "د. المعيقلى",
+    brandShort: "د. الصوالحي",
     nav_home: "الرئيسية",
     nav_about: "نبذة",
     nav_research: "الأبحاث",

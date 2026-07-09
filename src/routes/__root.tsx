@@ -18,11 +18,11 @@ import { Toaster } from "sonner";
 const PERSON_JSONLD = {
   "@context": "https://schema.org",
   "@type": "Person",
-  name: "Dr. Ahmed Al-Muaiqly",
-  alternateName: "د. أحمد المعيقلى",
+  name: "Dr. Tamer Al-Solahi",
+  alternateName: "د. تامر الصوالحي",
   jobTitle: "Researcher in Ancient Egyptian Archaeology & Historical Consultant",
   description:
-    "Dr. Ahmed Al-Muaiqly is a researcher in Ancient Egyptian Archaeology and historical consultant specializing in Egyptology, hieroglyphic studies, and cultural heritage of Ancient Egypt.",
+    "Dr. Tamer Al-Solahi is a researcher in Ancient Egyptian Archaeology and historical consultant specializing in Egyptology, hieroglyphic studies, and cultural heritage of Ancient Egypt.",
   knowsAbout: [
     "Egyptology",
     "Ancient Egyptian Archaeology",
@@ -48,7 +48,6 @@ const PERSON_JSONLD = {
     addressCountry: "EG",
   },
   telephone: "+201150778062",
-  email: "ahmedalmuaiqly@gmail.com",
   url: "/",
   sameAs: [
     "https://web.facebook.com/profile.php?id=61576404092074",
@@ -59,8 +58,8 @@ const PERSON_JSONLD = {
 const WEBSITE_JSONLD = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  name: "Dr. Ahmed Al-Muaiqly — Egyptology Research",
-  alternateName: "د. أحمد المعيقلى",
+  name: "Dr. Tamer Al-Solahi — Egyptology Research",
+  alternateName: "د. تامر الصوالحي",
   inLanguage: ["en", "ar"],
   url: "/",
 };
@@ -116,36 +115,34 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Dr. Ahmed Al-Muaiqly — Egyptology Researcher & Historical Consultant" },
+      { title: "Dr. Tamer Al-Solahi — Egyptology Researcher & Historical Consultant" },
       {
         name: "description",
         content:
-          "Official site of Dr. Ahmed Al-Muaiqly (د. أحمد المعيقلى), researcher in Ancient Egyptian Archaeology and historical consultant. Research, publications, and consulting in Egyptology.",
+          "Official site of Dr. Tamer Al-Solahi (د. تامر الصوالحي), researcher in Ancient Egyptian Archaeology and historical consultant. Research, publications, and consulting in Egyptology.",
       },
-      { name: "author", content: "Dr. Ahmed Al-Muaiqly" },
+      { name: "author", content: "Dr. Tamer Al-Solahi" },
       {
         name: "keywords",
         content:
-          "Ahmed Al-Muaiqly, Dr. Ahmed Al-Muaiqly, أحمد المعيقلى, Egyptology, Ancient Egyptian Archaeology, Hieroglyphs, Pharaonic History, علم المصريات, الآثار المصرية, الهيروغليفية, تاريخ مصر القديمة, مستشار تاريخي",
+          "Tamer Al-Solahi, Dr. Tamer Al-Solahi, تامر الصوالحي, Egyptology, Ancient Egyptian Archaeology, Hieroglyphs, Pharaonic History, علم المصريات, الآثار المصرية, الهيروغليفية, تاريخ مصر القديمة, مستشار تاريخي",
       },
       { property: "og:type", content: "website" },
-      { property: "og:site_name", content: "Dr. Ahmed Al-Muaiqly" },
-      { property: "og:title", content: "Dr. Ahmed Al-Muaiqly — Egyptology Researcher & Historical Consultant" },
-      { property: "og:description", content: "A professional, bilingual website showcasing Dr. Ahmed Al-Muaiqly's expertise in Ancient Egyptian Archaeology." },
+      { property: "og:site_name", content: "Dr. Tamer Al-Solahi" },
+      { property: "og:title", content: "Dr. Tamer Al-Solahi — Egyptology Researcher & Historical Consultant" },
+      { property: "og:description", content: "A professional, bilingual website showcasing Dr. Tamer Al-Solahi's expertise in Ancient Egyptian Archaeology." },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Dr. Ahmed Al-Muaiqly — Egyptology Researcher & Historical Consultant" },
-      { name: "description", content: "A professional, bilingual website showcasing Dr. Ahmed Al-Muaiqly's expertise in Ancient Egyptian Archaeology." },
-      { name: "twitter:description", content: "A professional, bilingual website showcasing Dr. Ahmed Al-Muaiqly's expertise in Ancient Egyptian Archaeology." },
+      { name: "twitter:title", content: "Dr. Tamer Al-Solahi — Egyptology Researcher & Historical Consultant" },
+      { name: "description", content: "A professional, bilingual website showcasing Dr. Tamer Al-Solahi's expertise in Ancient Egyptian Archaeology." },
+      { name: "twitter:description", content: "A professional, bilingual website showcasing Dr. Tamer Al-Solahi's expertise in Ancient Egyptian Archaeology." },
       { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/7c8cf796-011f-4d29-b3bf-cc5e9360f8a5/id-preview-b774e7b8--99832f1f-9051-48e8-acb6-ba110736b586.lovable.app-1782900015607.png" },
       { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/7c8cf796-011f-4d29-b3bf-cc5e9360f8a5/id-preview-b774e7b8--99832f1f-9051-48e8-acb6-ba110736b586.lovable.app-1782900015607.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
-      { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Tajawal:wght@400;500;700;900&family=Cairo:wght@600;700;900&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Amiri:wght@400;700&family=Noto+Naskh+Arabic:wght@400;500;700&display=swap",
       },
     ],
     scripts: [
@@ -161,7 +158,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
-    <html lang="ar" dir="rtl" className="dark" style={{ colorScheme: "dark" }}>
+    <html lang="ar" dir="rtl">
       <head>
         <HeadContent />
       </head>

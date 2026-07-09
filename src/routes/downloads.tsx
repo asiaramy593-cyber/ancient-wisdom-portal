@@ -6,9 +6,9 @@ import { FileText, Download } from "lucide-react";
 export const Route = createFileRoute("/downloads")({
   head: () => ({
     meta: [
-      { title: "Downloads — CV, Reading Lists & Resources | Dr. Ahmed Al-Muaiqly" },
-      { name: "description", content: "Downloadable academic CV, Egyptology reading lists, and research resources by Dr. Ahmed Al-Muaiqly." },
-      { property: "og:title", content: "Downloads — Dr. Ahmed Al-Muaiqly" },
+      { title: "Downloads — CV, Reading Lists & Resources | Dr. Tamer Al-Solahi" },
+      { name: "description", content: "Downloadable academic CV, Egyptology reading lists, and research resources by Dr. Tamer Al-Solahi." },
+      { property: "og:title", content: "Downloads — Dr. Tamer Al-Solahi" },
       { property: "og:description", content: "CV, reading lists, and Egyptology research resources." },
       { property: "og:url", content: "/downloads" },
     ],

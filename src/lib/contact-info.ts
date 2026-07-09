@@ -1,8 +1,8 @@
-// Official contact details for Dr. Ahmed Al-Muaiqly
+// Official contact details for Dr. Tamer Al-Solahi
 export const PHONE_INTL = "+201150778062"; // E.164 format
 export const PHONE_DISPLAY = "+20 115 077 8062";
 export const WHATSAPP_URL = `https://wa.me/${PHONE_INTL.replace(/[^0-9]/g, "")}`;
-export const EMAIL = "ahmedalmuaiqly@gmail.com";
+export const EMAIL = "contact@alsolahi.research";
 export const MAILTO_URL = `mailto:${EMAIL}`;
 export const FACEBOOK_URL = "https://web.facebook.com/profile.php?id=61576404092074";
 
